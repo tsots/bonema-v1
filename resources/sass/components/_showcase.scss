@@ -1,0 +1,173 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 128px);
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide .content h1 {
+    margin-bottom: 10px;
+}
+
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons {
+    button#next {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+    }
+
+    button#prev {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+    }
+
+    button {
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        padding: 13px 15px;
+        border-radius: 50%;
+        outline: none;
+
+        &:hover {
+            background-color: white;
+            color: #333;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .slider {
+        height: calc(100vh - 88px);
+    }
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+}
+
+.slide:first-child {
+    background: url("../images/slider/family-in-car.jpg") no-repeat center
+        center/cover;
+}
+
+.slide:nth-child(2) {
+    background: url("../images/slider/o-satellite-facebook\ Frame.jpg")
+        no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+    background: url("../images/slider/technology-in-hand.jpg") no-repeat center
+        center/cover;
+}
+
+.slide:nth-child(4) {
+    background: url("../images/slider/family-in-car.jpg") no-repeat center
+        center/cover;
+}
+
+.slide:nth-child(5) {
+    background: url("../images/slider/o-satellite-facebook\ Frame.jpg")
+        no-repeat center center/cover;
+}
+
+.slide:nth-child(6) {
+    background: url("../images/slider/o-satellite-facebook\ Frame.jpg")
+        no-repeat center center/cover;
+}
+
+.swiper {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    // overflow-x: hidden;
+}
+
+.swiper-container {
+    width: 90%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+.swiper-container {
+    width: 90%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
