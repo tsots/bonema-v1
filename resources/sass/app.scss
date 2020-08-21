@@ -1,5 +1,27 @@
 //
 
 @import "./base";
+
+@import "./variables/media-queries";
+
 @import "./components/navigation";
 @import "./components/showcase";
+
+.active {
+    color: forestgreen !important;
+}
+
+.active-bg {
+    background-color: green;
+
+    .active {
+        color: white !important;
+    }
+}
+
+body {
+    background-color: red;
+    @include size(md) {
+        background-color: green;
+    }
+}

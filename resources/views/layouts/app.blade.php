@@ -18,8 +18,13 @@
  
   
    <main>
-     <div class="sidebar"><x-sidebar /></div>
-    @yield('content')
+
+    @if (\Request::is('/') or \Request::is('bonema-track/*')) 
+...@yield('content')
+@else
+<x-sidebar />
+@yield('content')
+@endif
   </main>
   @yield('map')
 

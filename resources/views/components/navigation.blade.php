@@ -52,7 +52,7 @@
               </li>
               <li><a href="{{route('asset-tracking')}}">Bonema Asset Tracking</a></li>
               <li>
-                <a href="#"
+                <a class="{{ (request()->is('bonema-ict*')) ? 'active' : '' }}" href="#"
                   >Bonema Ict
                   <i class="icon ion-android-arrow-dropdown"></i>
                 </a>
@@ -63,12 +63,16 @@
                     <li><a href="{{route('ict-comms')}}">Comms & Networks</a></li>
                         <li><a href="{{route('ict-security')}}">ICT Security</a></li>
                         <li><a href="{{route('ict-outsourcing')}}">IT Outsourcing</a></li>
-                        <li><a href="{{route('ict-service')}}">Professional Services</a></li>
+                        <li class="{{ Route::is('ict-service') ? 'active-bg' : '' }}"><a class="{{ Route::is('ict-service') ? 'active' : '' }}" href="{{route('ict-service')}}">Professional Services</a></li>
                         <li><a href="{{route('ict-sage')}}">Sage Solutions</a></li>
               </ul>
               </li>
             </ul>
           </li>
+
+          @if (\Request::is('bonema-ict/*', 'active')) 
+          
+          @endif
           <li><a href="{{route('page-gallery')}}">Gallery</a></li>
             <li><a href="{{route('about-profile')}}">About
                 <i class="icon ion-arrow-down-b"></i>
