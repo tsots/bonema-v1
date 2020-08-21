@@ -1,12 +1,12 @@
-@extends('layouts.sidebar')
+@extends('layouts.app')
 
 @section('page-class', 'about-us')
-@include('inc/about-sidebar')
+{{-- @include('inc/about-sidebar') --}}
 
 @section('content')
-<h1>{{$title}}</h1>
 <div class="content">
   {{-- <h1 class="page-name">COMPANY PROFILE</h1> --}}
+  <h1>{{$title}}</h1>
   <h2 class="sub-heading">Who we are</h2>
   <p>
     We are an ICT company with core specialization in asset and performance

@@ -1,8 +1,7 @@
-@extends('layouts.sidebar')
+@extends('layouts.app')
 
 @section('page-class', 'bonema-track')
 
-@include('inc/track-sidebar')
 
 @section('content')
 <h1>{{$title}}</h1>

@@ -1,8 +1,6 @@
-@extends('layouts.sidebar')
+@extends('layouts.app')
 
 @section('page-class', 'bonema-fleet')
-
-@include('inc/fleet-sidebar')
 
 @section('content')
 <h1>{{$title}}</h1>

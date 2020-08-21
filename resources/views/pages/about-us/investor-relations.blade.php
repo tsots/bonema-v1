@@ -1,12 +1,12 @@
-@extends('layouts.sidebar')
+@extends('layouts.app')
 
 @section('page-class', 'about-us')
-@include('inc/about-sidebar')
+
 
 @section('content')
-<h1>{{$title}}</h1>
 <div class="content">
   {{-- <h1 class="page-name">INVESTOR RELATIONS</h1> --}}
+  <h1>{{$title}}</h1>
   <h2 class="sub-heading">Overview</h2>
   <p>
     Bonema Technologies (Pty) Ltd is a self funded family business, with no

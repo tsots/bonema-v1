@@ -1,13 +1,11 @@
-@extends('layouts.sidebar')
+@extends('layouts.app')
 
 @section('page-class', 'bonema-find')
 @section('page-name', 'find-support')
 
-@include('inc/find-sidebar')
-
 @section('content')
-<h1>{{$title}}</h1>
 <div class="content">
+  <h1>{{$title}}</h1>
   {{-- <h1 class="page-name">Setup &amp; Support</h1> --}}
   <p>
     We customize our systems according to your unique specification.<br />

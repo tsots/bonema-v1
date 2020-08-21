@@ -18,6 +18,7 @@
  
   
    <main>
+     <div class="sidebar"><x-sidebar /></div>
     @yield('content')
   </main>
   @yield('map')

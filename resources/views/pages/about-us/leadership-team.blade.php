@@ -1,8 +1,8 @@
-@extends('layouts.sidebar')
+@extends('layouts.app')
 
 @section('page-class', 'about-us')
 @section('page-name', 'leadership-team')
-@include('inc/about-sidebar')
+{{-- @include('inc/about-sidebar') --}}
 
 @section('content')
 <h1>{{$title}}</h1>

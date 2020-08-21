@@ -1,8 +1,7 @@
-@extends('layouts.sidebar')
+@extends('layouts.app')
 
 @section('page-class', 'bonema-find')
 
-@include('inc/find-sidebar')
 
 @section('content')
 <h1>{{$title}}</h1>
