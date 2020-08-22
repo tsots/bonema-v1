@@ -161,3 +161,17 @@
         }
     }
 }
+
+nav .contact {
+    h1 {
+        text-align: center;
+        line-height: 1.618;
+    }
+    span:nth-of-type(1) {
+        display: none;
+    }
+}
+
+.icon.ion-android-menu {
+    color: $primary;
+}
