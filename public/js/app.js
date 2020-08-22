@@ -19330,83 +19330,25 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); ///////////////////////////////////////////////////////////////////////////////////////////////////
+// var swiper = new Swiper(".swiper-container", {
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     autoplay: {
+//         delay: 10000,
+//         disableOnInteraction: false
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev"
+//     }
+// });
+////////////////////////////////////////////////////////////////////////////////////////////////
 
-var slides = document.querySelectorAll(".slide");
-var next = document.querySelector("#next");
-var prev = document.querySelector("#prev");
-var auto = true;
-var intervalTime = 10000;
-var slideInterval;
-
-var nextSlide = function nextSlide() {
-  var current = document.querySelector(".current");
-  current.classList.remove("current");
-
-  if (current.nextElementSibling) {
-    current.nextElementSibling.classList.add("current");
-  } else {
-    slides[0].classList.add("current");
-  }
-
-  setTimeout(function () {
-    return current.classList.remove("current");
-  });
-};
-
-var prevSlide = function prevSlide() {
-  var current = document.querySelector(".current");
-  current.classList.remove("current");
-
-  if (current.previousElementSibling) {
-    current.previousElementSibling.classList.add("current");
-  } else {
-    slides[slides.length - 1].classList.add("current");
-  }
-
-  setTimeout(function () {
-    return current.classList.remove("current");
-  });
-};
-
-next.addEventListener("click", function (e) {
-  nextSlide();
-
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-});
-prev.addEventListener("click", function (e) {
-  prevSlide();
-
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-}); // Auto Slide
-
-if (auto) {
-  slideInterval = setInterval(nextSlide, intervalTime);
-} ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-var swiper = new Swiper(".swiper-container", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 10000,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
 
 var selectElement = function selectElement(element) {
   return document.querySelector(element);

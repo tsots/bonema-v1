@@ -1,9 +1,9 @@
 <header>
     <div class="container">
       <nav>
-        <div class="logo"><a href="{{ route('page-home') }}">Katalist</a></div>
+        <div class="logo"><a href="{{ route('page-home') }}"><img class="logo-img" src="{{asset('images/img/Logo.svg')}}" alt=""></a></div>
         <div class="contact">
-          <h1>Hello there</h1>
+          <h1 style="color: #7F7F7D; font-size: 17px; display:flex; flex:1; justify-content:center">Call us today: +27 11 655 4190 | Accounts: 0861 BONEMA</h1>
           <li class="move-right btn"><a href="#">Book a table</a></li>
         </div>
         <ul class="nav-list">

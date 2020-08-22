@@ -17,9 +17,9 @@ mix.js("resources/js/app.js", "public/js")
         processCssUrls: false
     })
     // .copyDirectory("resources/fonts", "public/fonts")
-    // .copyDirectory("resources/sass/fonts", "public/fonts")
+    .copyDirectory("resources/sass/fonts", "public/fonts")
     .copyDirectory("resources/images", "public/images")
-    // .copy("resources/js/slider.js", "public/js")
+    .copy("resources/js/slider.js", "public/js")
     .browserSync({
         files: [
             "public/css/app.css",

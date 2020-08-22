@@ -22,7 +22,7 @@
   <section class="cards">
     <div class="card card__1">
       <div class="card card__icon">
-        <img src="./img/bonema-find__setupicon.png" alt="" />
+        <img src="./images/img/bonema-find__setupicon.png" alt="" />
       </div>
       <div class="card card__content">
         <div class="card card__content card__content__heading">
@@ -37,7 +37,7 @@
     <!--END OF CARD-->
     <div class="card card__2">
       <div class="card card__icon">
-        <img src="./img/bonema-find__setupicon2.png" alt="" />
+        <img src="./images/img/bonema-find__setupicon2.png" alt="" />
       </div>
       <div class="card card__content">
         <div class="card card__content card__content__heading">
@@ -54,7 +54,7 @@
     <!--END OF CARD-->
     <div class="card card__3">
       <div class="card card__icon">
-        <img src="./img/bonema-find__setupicon3.png" alt="" />
+        <img src="./images/img/bonema-find__setupicon3.png" alt="" />
       </div>
       <div class="card card__content">
         <div class="card card__content card__content__heading">
@@ -70,7 +70,7 @@
     <!--END OF CARDS-->
     <div class="card card__4">
       <div class="card card__icon">
-        <img src="./img/bonema-find__setupicon4.png" alt="" />
+        <img src="./images/img/bonema-find__setupicon4.png" alt="" />
       </div>
       <div class="card card__content">
         <div class="card card__content card__content__heading">

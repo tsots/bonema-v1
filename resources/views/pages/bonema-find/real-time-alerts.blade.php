@@ -7,11 +7,11 @@
 <div class="infor__image">
   <picture>
     <source
-  srcset="{{asset('img/bonema-find__real-time-alerts-large.png')}}"
+  srcset="{{asset('images/img/bonema-find__real-time-alerts-large.png')}}"
       media="(min-width: 750px)"
     />
     <img
-      src="{{asset('img/bonema-find__real-time-alerts-small.png')}}"
+      src="{{asset('images/img/bonema-find__real-time-alerts-small.png')}}"
       alt=""
     /><!-- End with the smallest size-->
   </picture>

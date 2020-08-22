@@ -9,7 +9,7 @@
 
 <div class="leader">
   <div class="image">
-    <img src="{{asset('img/leader__maemili.jpg')}}" alt="">
+    <img src="{{asset('images/img/leader__maemili.jpg')}}" alt="">
   </div>
   <div class="details">
     <h3>Maemili Ramataboe</h3>
@@ -65,7 +65,7 @@ note worthy offices:
 
 <div class="leader">
   <div class="image">
-    <img src="{{asset('img/leader__bokang.jpg')}}" alt="">
+    <img src="{{asset('images/img/leader__bokang.jpg')}}" alt="">
   </div>
   <div class="bio">
     <h3>Bokang Mosala</h3>
@@ -116,7 +116,7 @@ note worthy offices:
 
 <div class="leader">
   <div class="image">
-    <img src="{{asset('img/leader__rebaone.jpg')}}" alt="">
+    <img src="{{asset('images/img/leader__rebaone.jpg')}}" alt="">
   </div>
   <div class="bio">
     <h3>Rebaone Kgobokoe</h3>

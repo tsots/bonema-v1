@@ -8,11 +8,11 @@
 <div class="infor__image">
   <picture>
     <source
-  srcset="{{asset('img/bonema-track__fleet-maintenance-large.png')}}"
+  srcset="{{asset('images/img/bonema-track__fleet-maintenance-large.png')}}"
       media="(min-width: 750px)"
     />
     <img
-  src="{{asset('img/bonema-track__fleet-maintenance-small.png')}}"
+  src="{{asset('images/img/bonema-track__fleet-maintenance-small.png')}}"
       alt=""
     /><!-- End with the smallest size-->
   </picture>

@@ -5,7 +5,7 @@
 @section('content')
 <h1>{{$title}}</h1>
 <div class="infor__image">
-<img src="{{asset('img/bonema-track__driver__id.png')}}" alt="" />
+<img src="{{asset('images/img/bonema-track__driver__id.png')}}" alt="" />
 </div>
 <p>
   Our Driver identification system lets the vehicle owner/company know exactly

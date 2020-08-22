@@ -10,6 +10,6 @@
 <x-showcase />
 @endsection
 
-@section('scripts')
+@section('page_specific_js')
 <script src="{{asset('js/slider.js')}}"></script>
 @endsection
