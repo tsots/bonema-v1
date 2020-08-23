@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('page-class', 'bonema-ict')
+@section('page-name', 'cloud-services')
 
 
 @section('content')
@@ -25,7 +26,7 @@
   <section>
     <h2 class="sub-heading">A subscription-based managed service</h2>
     <div class="infor__image">
-      <img src="../../img/bonema-ict__seagate_logo.jpg" alt="" />
+      <img class="seagate" src="{{asset('images/bonema-ict__seagate_logo.jpg')}}" alt="" />
     </div>
     <p>
       The Managed Cloud Backup and Recovery service, offered by Bonema
@@ -78,7 +79,7 @@
   <section>
     <h2 class="sub-heading">256-bit AES encryption</h2>
     <div class="infor__image">
-      <img src="../../img/bonema-ict__seagate_logo.jpg" alt="" />
+      <img class="deltapro" src="{{asset('images/bonema-ict__managed_backup_encryption.jpg')}}" alt="" />
     </div>
     <p>
       Your data will be encrypted using the National Institute of

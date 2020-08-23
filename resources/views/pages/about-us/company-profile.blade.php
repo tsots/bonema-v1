@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('page-class', 'about-us')
+@section('page-name', 'company-profile')
 {{-- @include('inc/about-sidebar') --}}
 
 @section('content')

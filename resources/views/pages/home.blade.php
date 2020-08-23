@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page-name', 'home')
+
 @section('styles')
 {{-- <link rel="stylesheet" href="{{asset('')}}"> --}}
 @endsection

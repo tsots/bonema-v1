@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('page-class', 'bonema-ict')
+@section('page-name', 'ict-security')
 
 
 @section('content')
@@ -27,6 +28,7 @@
       <li>Intrusion Prevention</li>
       <li>Application Control</li>
       <li>Web Content Filtering</li>
+      <li>Firewalling</li>
       <li>Data Loss Prevention</li>
     </ul>
     <ul>

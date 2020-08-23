@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('page-class', 'about-us')
+@section('page-name', 'investor-relations')
 
 
 @section('content')

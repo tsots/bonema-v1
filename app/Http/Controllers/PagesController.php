@@ -200,7 +200,7 @@ public function IctSystemAndPlatforms(){
 /////////////////////// BONEMA ASSET TRACKING PAGES //////////////////////////////////////
 
 public function AssetTrackingIndex(){
-    $title = "Asset Tracking";
+    $title = "Bonema Asset Tracking";
     return view('pages.bonema-asset-tracking.asset-tracking')->with('title', $title);
 }
 }

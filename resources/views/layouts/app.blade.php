@@ -15,9 +15,9 @@
 </head>
 @if (\Request::is('/') or \Request::is('gallery') or \Request::is('support') or \Request::is('contact-us') or \Request::is('events')) 
 
-<body class="without-sidedar">
+<body class="@yield('page-name')">
   <x-navigation />
-  <main class="@yield('page-name')">
+  <main class="@yield('page-name') without-sidedar">
     @yield('content')
   </main>
   <x-footer />
@@ -26,9 +26,9 @@
 </body>
 
 @elseif(\Request::is('bonema-track/*') or \Request::is('bonema-fleet/*') or \Request::is('bonema-find/*') or \Request::is('bonema-find/*') or \Request::is('bonema-ict/*') or \Request::is('about-us/*') or \Request::is('bonema-asset-tracking/*'))
-<body class="with-sidebar">
+<body class="@yield('page-name')">
   <x-navigation />
-  <main class="@yield('page-name')">
+  <main class="@yield('page-name') with-sidebar">
     <div class="sidebar"><x-sidebar /></div>
     <div class="content">@yield('content') </div>  
   </main>

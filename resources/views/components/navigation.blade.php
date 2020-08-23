@@ -1,14 +1,16 @@
 <header>
     <div class="container">
       <nav>
-        <div class="logo"><a href="{{ route('page-home') }}"><img class="logo-img" src="{{asset('images/img/Logo.svg')}}" alt=""></a></div>
+        <div class="logo"><a href="{{ route('page-home') }}">
+          <img class="logo-img" src="{{asset('images/img/Logo.svg')}}" alt=""></a>
+        </div>
         <div class="contact">
           <h1>Call us today: +27 11 655 4190 <span>|</span> <span>Accounts: 0861 BONEMA</span></h1>
           <li class="move-right btn"><a href="#">Customer Login</a></li>
           <li class="move-right btn"><a href="#">Fleet Login</a></li>
         </div>
         <ul class="nav-list">
-          <li class="{{ Route::is('page-home') ? 'active' : '' }}"><a href="{{ route('page-home') }}">Home</a></li>
+          <li><a href="{{ route('page-home') }}">Home</a></li>
           <li>
             <a href="#"
               >Products

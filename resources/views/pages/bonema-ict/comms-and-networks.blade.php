@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('page-class', 'bonema-ict')
+@section('page-name', 'comms-networks')
 
 
 @section('content')
