@@ -1,0 +1,215 @@
+.contact.without-sidedar {
+    padding-top: 5rem;
+}
+
+.contact-page .inner {
+    display: grid;
+    width: 100%;
+    padding-bottom: 8rem;
+    // grid-gap: 100px;
+    // height: calc(100% - 12rem);
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "title title"
+        "details details"
+        "form form";
+    @include size(md) {
+        max-width: 960px;
+        grid-template-columns: 4fr 6fr;
+        grid-template-rows: 50px 200px 350px;
+        grid-template-areas:
+            "title title"
+            "details form";
+    }
+
+    ul {
+        border-bottom: 2px solid rgba(125, 125, 125, 0.3);
+        @include size(md) {
+            border-bottom: 0;
+        }
+        li {
+            line-height: 3rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    h1 {
+        grid-area: title;
+        width: 90%;
+        padding-left: 15px;
+        padding-bottom: 3rem;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        color: $primary;
+        @include size(md) {
+            width: 100%;
+            padding-left: 0;
+            padding-bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+            color: $primary;
+        }
+    }
+    .form {
+        grid-area: form;
+        width: 90%;
+        margin: 0 auto;
+        @include size(md) {
+            justify-self: flex-end;
+            width: 80%;
+        }
+    }
+    .contact {
+        grid-area: details;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+        @include size(md) {
+            width: 100%;
+            padding-bottom: 3rem;
+        }
+    }
+
+    .input-field {
+        width: 100%;
+        margin: 2rem auto;
+        position: relative;
+        height: 40px;
+
+        input {
+            width: 100%;
+            height: 100%;
+            padding-left: 15px;
+            outline: none;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid silver;
+            transition: 0.5s;
+        }
+
+        input:focus {
+            border-bottom: 1px solid $primary;
+        }
+
+        label {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: grey;
+            font-size: 14px;
+            transition: 650ms;
+        }
+
+        input:focus ~ label {
+            transform: translateY(-28px);
+            background: white;
+            font-size: 1.2rem;
+            color: $primary;
+        }
+
+        textarea {
+            width: 100%;
+            outline: none;
+            padding: 10px 15px;
+            // border-top: 0;
+            // border-left: 0;
+            // border-right: 0;
+            border: 1px solid silver;
+            border-radius: 7px;
+            transition: 650ms;
+        }
+
+        textarea:focus {
+            border: 1px solid $primary;
+        }
+    }
+    .input-group.select {
+        margin-top: 30px;
+        select {
+            width: 60%;
+            height: 30px;
+            margin-top: 15px;
+            margin-left: 15px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid silver;
+            outline: none;
+        }
+        label {
+            display: block;
+            margin-left: 15px;
+            color: grey;
+            font-size: 16px;
+        }
+    }
+
+    .input-group.message {
+        // position: absolute;
+        margin-top: 30px;
+        textarea {
+            width: 100%;
+            // height: 30px;
+            margin-top: 15px;
+            margin-left: 15px;
+            outline: none;
+            padding: 10px 15px;
+            // border-top: 0;
+            // border-left: 0;
+            // border-right: 0;
+            border: 1px solid silver;
+            border-radius: 7px;
+
+            &:focus {
+                border: 1px solid $primary;
+            }
+        }
+        label {
+            display: block;
+            margin-left: 15px;
+            color: grey;
+            font-size: 16px;
+        }
+    }
+
+    button[type="submit"] {
+        background-color: $primary;
+        margin-top: 1.5rem;
+        margin-left: 15px;
+        border: 2px solid darken($primary, 5);
+        outline: none;
+        padding: 0.5rem 1.1rem;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        transition: 650ms;
+
+        &:hover {
+            color: $primary;
+            background-color: $white;
+            border: 2px solid darken($primary, 0);
+        }
+    }
+}
+
+.contact {
+    .contact__address {
+        margin-bottom: 3rem;
+    }
+
+    .contact__details,
+    .contact__address {
+        li:first-of-type {
+            font-size: 1.7rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+    }
+}

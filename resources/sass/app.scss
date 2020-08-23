@@ -9,6 +9,7 @@
 @import "./components/showcase";
 @import "./components/pages";
 @import "./components/footer";
+@import "./components/contact-form";
 
 @import "./ionicons/ionicons.scss";
 // @import "./ionicons/ion.scss";
@@ -68,4 +69,22 @@ nav .contact {
             color: $primary;
         }
     }
+}
+
+img.facebook {
+    // fill: white;
+    width: 32px;
+    height: 32px;
+    transition: 650ms;
+    transform: scale(0.8);
+    cursor: pointer;
+    // fill: #960996;
+
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+svg path {
+    fill: white;
 }

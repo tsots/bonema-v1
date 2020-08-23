@@ -59,13 +59,17 @@
         </div>
       </div>
       <div class="social-media">
-        {{-- <ion-icon name="logo-facebook"></ion-icon> --}}
-        
-      <ion-icon src="{{asset('images/icons/logo-facebook.svg')}}"></ion-icon>
-      <ion-icon src="{{asset('images/icons/logo-twitter.svg')}}"></ion-icon>
-      <ion-icon src="{{asset('images/icons/_ionicons_svg_logo-linkedin.svg')}}"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        {{-- <ion-icon name="logo-facebook"></ion-icon>
+        {{-- <i class="icon logo-facebook"></i>
+        <ion-icon name="logo-facebook"></ion-icon> --}}
+        <i class="icon ion-social-facebook"></i>
+        <img class="facebook" src="{{asset('images/icons/logo-facebook.svg')}}" alt="">
+      
       </div>
       <div class="copyright">
           <p>Copyright &copy; {{date('Y')}}</p>
       </div>
 </footer>
+
+{{-- http://jsfiddle.net/sulfureous/9Q4Qe/ --}}

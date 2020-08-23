@@ -5,7 +5,7 @@
 @section('content')
 <h1>{{$title}}</h1>
 <div class="infor__image">
-<img src="{{asset('img/bonema-fleet__report.png')}}" alt="" />
+<img src="{{asset('images/img/bonema-fleet__report.png')}}" alt="" />
 </div>
 <p>Live stress free and let Bonema Technologies fleet management systems manage
   all aspects of your vehicle such as insurance, vehicle administration and

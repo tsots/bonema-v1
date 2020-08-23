@@ -7,11 +7,11 @@
 <div class="infor__image">
   <picture>
     <source
-  srcset="{{asset('img/bonema-find__dashboard-large.png')}}"
+  srcset="{{asset('images/img/bonema-find__dashboard-large.png')}}"
       media="(min-width: 750px)"
     />
     <img
-  src="{{asset('img/bonema-find__dashboard-small.png')}}"
+  src="{{asset('images/img/bonema-find__dashboard-small.png')}}"
       alt=""
     /><!-- End with the smallest size-->
   </picture>

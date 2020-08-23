@@ -20,9 +20,11 @@
   <main class="@yield('page-name') without-sidedar">
     @yield('content')
   </main>
+  @yield('map')
   <x-footer />
   @yield('page_specific_js')
 <script src="{{asset('js/app.js')}}"></script>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
 @elseif(\Request::is('bonema-track/*') or \Request::is('bonema-fleet/*') or \Request::is('bonema-find/*') or \Request::is('bonema-find/*') or \Request::is('bonema-ict/*') or \Request::is('about-us/*') or \Request::is('bonema-asset-tracking/*'))
@@ -34,6 +36,7 @@
   </main>
   <x-footer />
   <script src="{{asset('js/app.js')}}"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
 @endif
