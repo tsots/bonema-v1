@@ -1,4 +1,5 @@
-<div class="slider">
+<div id="slider">
+  <div class="slider">
     <div class="slide current">
       <div class="content">
         <h1>#PutYourassetInYourPocket</h1>
@@ -60,9 +61,12 @@
     </div> --}}
   </div>
   <div class="buttons">
-    <button id="prev"><i class="fas fa-arrow-left"></i></button>
-    <button id="next"><i class="fas fa-arrow-right"></i></button>
+    <button id="prev"><i class="icon ion-ios-arrow-back"></i></button>
+    <button id="next"><i class="icon ion-ios-arrow-forward"></i></button>
+    
+    
   </div>
+</div>
   
   @section('scripts')
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

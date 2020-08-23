@@ -19,6 +19,7 @@ mix.js("resources/js/app.js", "public/js")
     // .copyDirectory("resources/fonts", "public/fonts")
     .copyDirectory("resources/sass/fonts", "public/fonts")
     .copyDirectory("resources/images", "public/images")
+    // .copyDirectory("resources/js/ionicons", "public/js/ionicons")
     .copy("resources/js/slider.js", "public/js")
     .browserSync({
         files: [

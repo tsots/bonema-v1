@@ -120,11 +120,18 @@ nav {
 
 .nav-list li {
     line-height: 8rem;
+
+    @include size(md) {
+        line-height: 2rem;
+    }
     position: relative;
 }
 
 .sub-menu li {
     line-height: 4rem;
+    // @include size(md) {
+    //     line-height: 2rem;
+    // }
 }
 
 .nav-list a {
@@ -176,6 +183,9 @@ nav {
     background-color: #191919;
     z-index: 100;
     top: 16rem;
+    @include size(md) {
+        top: 4rem;
+    }
     opacity: 0;
     visibility: hidden;
     transition: all 650ms ease;
@@ -216,7 +226,7 @@ nav {
 .nav-list li:hover > .sub-menu {
     top: 8rem;
     @include size(md) {
-        top: 6.5rem;
+        top: 3.5rem;
     }
     opacity: 1;
     visibility: visible;
@@ -245,6 +255,7 @@ li.move-right {
         background-color: $primary; //#191919
         z-index: 9998;
         overflow-y: scroll;
+        overflow-x: hidden;
 
         a {
             color: $white;
@@ -305,6 +316,7 @@ li.move-right {
 
     nav.active .ion-close {
         display: block;
+        transform: translateX(-10px);
     }
 
     nav.active .ion-android-menu {
