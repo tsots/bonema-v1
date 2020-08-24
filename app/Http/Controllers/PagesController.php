@@ -17,7 +17,7 @@ class PagesController extends Controller
     }
 
     public function getEvents(){
-        $title = "Events";
+        $title = "Events and Announcements";
         return view('pages.events')->with('title', $title);
     }
 

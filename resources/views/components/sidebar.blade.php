@@ -82,3 +82,20 @@
   <a class="btn btn-demo" href="{{route('FreeDemo')}}">Get A Free Demo</a>
 </div>
 @endif
+
+@if (\Request::is('events'))  
+<h3>EVENTS</h3>
+<div class="buttons">
+  <a class="btn btn-quote" target="_blank" href="http://34.73.4.152">Bonema Asset Login</a>
+  <a class="btn btn-demo" href="{{route('FreeDemo')}}">Get A Free Demo</a>
+</div>
+@endif
+
+
+@if (\Request::is('gallery'))  
+<h3>GALLERY</h3>
+<div class="buttons">
+  <a class="btn btn-quote" target="_blank" href="http://34.73.4.152">Bonema Asset Login</a>
+  <a class="btn btn-demo" href="{{route('FreeDemo')}}">Get A Free Demo</a>
+</div>
+@endif

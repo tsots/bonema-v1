@@ -13,7 +13,7 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <title>{{config ('app.name')}} | {{$title}}</title>
 </head>
-@if (\Request::is('/') or \Request::is('gallery') or \Request::is('support') or \Request::is('contact-us') or \Request::is('events') or \Request::is('free-demo')) 
+@if (\Request::is('/') or \Request::is('support') or \Request::is('contact-us') or \Request::is('free-demo')) 
 
 <body class="@yield('page-name')">
   <x-navigation />
@@ -27,7 +27,7 @@
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
-@elseif(\Request::is('bonema-track/*') or \Request::is('bonema-fleet/*') or \Request::is('bonema-find/*') or \Request::is('bonema-find/*') or \Request::is('bonema-ict/*') or \Request::is('about-us/*') or \Request::is('bonema-asset-tracking/*'))
+@elseif(\Request::is('bonema-track/*') or \Request::is('gallery') or \Request::is('events') or \Request::is('bonema-fleet/*') or \Request::is('bonema-find/*') or \Request::is('bonema-find/*') or \Request::is('bonema-ict/*') or \Request::is('about-us/*') or \Request::is('bonema-asset-tracking/*'))
 <body class="@yield('page-name')">
   <x-navigation />
   <main class="@yield('page-name') with-sidebar">

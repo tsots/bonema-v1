@@ -833,6 +833,57 @@ main.asset-tracking.with-sidebar .content .infor__image img {
   max-width: 499px;
 }
 
+.bonema-gallery.with-sidebar .sidebar h3 {
+  font-size: 1.4rem;
+  display: grid;
+  align-items: center;
+  padding: 3rem 0rem 2rem 1.4rem;
+}
+.bonema-gallery.with-sidebar .sidebar a.btn {
+  font-size: 1.3rem;
+}
+.bonema-gallery.with-sidebar .content {
+  padding: 0;
+}
+.bonema-gallery.with-sidebar .content h1 {
+  padding-left: 1.4rem;
+}
+@media screen and (min-width: 1280px) {
+  .bonema-gallery.with-sidebar .content h1 {
+    padding-left: 0;
+  }
+}
+.bonema-gallery.with-sidebar .gallery .images {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  .bonema-gallery.with-sidebar .gallery .images {
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.bonema-gallery.with-sidebar .gallery .images img {
+  width: 100%;
+  max-width: 300px;
+}
+@media screen and (min-width: 960px) {
+  .bonema-gallery.with-sidebar .gallery .images img {
+    max-width: 499px;
+  }
+}
+
+.bonema-events.with-sidebar .sidebar h3 {
+  font-size: 1.4rem;
+  display: grid;
+  align-items: center;
+  padding: 3rem 0rem 2rem 1.4rem;
+}
+.bonema-events.with-sidebar .sidebar a.btn {
+  font-size: 1.3rem;
+}
+
 footer {
   background-color: #343434;
 }

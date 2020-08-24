@@ -6,8 +6,8 @@
         </div>
         <div class="contact">
           <h1>Call us today: +27 11 655 4190 <span>|</span> <span>Accounts: 0861 BONEMA</span></h1>
-          <li class="move-right btn"><a href="#">Customer Login</a></li>
-          <li class="move-right btn"><a href="#">Fleet Login</a></li>
+          <li class="move-right btn"><a href="http://bonemaplatform.bonema.co.za/" target="_blank">Customer Login</a></li>
+          <li class="move-right btn"><a href="http://bonemafleet.bonema.co.za/LoginPage/BomenaLogin/Login.htm" target="_blank">Fleet Login</a></li>
         </div>
         <ul class="nav-list">
           <li><a href="{{ route('page-home') }}">Home</a></li>
