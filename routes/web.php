@@ -53,3 +53,5 @@ Route::get('bonema-ict/sage-solutions', 'PagesController@IctSageSolutions')->nam
 Route::get('bonema-ict/system-and-platforms', 'PagesController@IctSystemAndPlatforms')->name('ict-system');
 
 Route::get('bonema-asset-tracking/asset-tracking', 'PagesController@AssetTrackingIndex')->name('asset-tracking');
+
+Route::get('free-demo', 'PagesController@freeDemo')->name('FreeDemo');

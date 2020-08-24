@@ -1,0 +1,80 @@
+.demo-form.without-sidedar {
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    min-height: calc(100vh - 8rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 1.4rem;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    // align-items: center;
+
+    form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1rem 8rem 10rem 8rem;
+        // height: 100%;
+        background-color: $secondary;
+
+        p {
+            font-size: 1.8rem;
+            line-height: calc(1.4rem * 1.618);
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            color: $white;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            font-family: "open-sans", sans-serif;
+        }
+        .input-group {
+            width: 100%;
+            position: relative;
+            margin-top: 35px;
+
+            input {
+                width: 100%;
+                height: 35px;
+                padding: 0.05rem 1rem;
+                outline: none;
+                border-radius: 7px;
+                border: 1px solid silver;
+                transition: all 650ms;
+                background-color: rgba(255, 255, 255, 0.9);
+
+                &:focus {
+                    border: 1px solid $primary;
+                    background-color: $white;
+                    box-shadow: inset $shadow;
+                }
+            }
+
+            label {
+                position: absolute;
+                top: -20px;
+                left: 1rem;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+
+        button {
+            margin-top: 2rem;
+            background-color: $primary;
+            color: $white;
+            font-size: 1.4rem;
+            text-align: center;
+            padding: 0.7rem 1rem;
+            display: block;
+            width: 100%;
+            border: 0;
+            border-radius: 7px;
+        }
+    }
+}

@@ -21,8 +21,8 @@
 <li><a class="{{ Route::is('track-support') ? 'active' : '' }}" href=" {{route('track-support')}} ">Setup & Support</a></li>
 </ul>
 <div class="buttons">
-  <a class="btn btn-quote" href="#">Get A Quote</a>
-  <a class="btn btn-demo" href="#">Get A Demo</a>
+  <a class="btn btn-quote" href="{{route('page-contact')}}">Get A Quote</a>
+  <a class="btn btn-demo" href="{{route('FreeDemo')}}">Get A Free Demo</a>
 </div>
 @endif
 
@@ -35,8 +35,8 @@
 <li><a class="{{ Route::is('find-support') ? 'active' : '' }}" href=" {{route('find-support')}} ">Setup & Support</a></li>
 </ul>
 <div class="buttons">
-  <a class="btn btn-quote" href="#">Get A Quote</a>
-  <a class="btn btn-demo" href="#">Get A Demo</a>
+  <a class="btn btn-quote" href="{{route('page-contact')}}">Get A Quote</a>
+  <a class="btn btn-demo" href="{{route('FreeDemo')}}">Get A Free Demo</a>
 </div>
 @endif
 
@@ -51,8 +51,8 @@
 <li><a class="{{ Route::is('fleet-support') ? 'active' : '' }}" href=" {{route('fleet-support')}} ">Setup & Support</a></li>
 </ul>
 <div class="buttons">
-  <a class="btn btn-quote" href="#">Get A Quote</a>
-  <a class="btn btn-demo" href="#">Get A Demo</a>
+  <a class="btn btn-quote" href="{{route('page-contact')}}">Get A Quote</a>
+  <a class="btn btn-demo" href="{{route('FreeDemo')}}">Get A Free Demo</a>
 </div>
 @endif
 
@@ -70,26 +70,15 @@
     <li><a class="{{ Route::is('ict-outsourcing') ? 'active' : '' }}" href=" {{route('ict-outsourcing')}} ">IT Outsourcing</a></li>
 </ul>
 <div class="buttons">
-  <a class="btn btn-quote" href="#">Get A Quote</a>
-  <a class="btn btn-demo" href="#">Get A Demo</a>
+  <a class="btn btn-quote" href="{{route('page-contact')}}">Get A Quote</a>
+  <a class="btn btn-demo" href="{{route('FreeDemo')}}">Get A Free Demo</a>
 </div>
 @endif
 
 @if (\Request::is('bonema-asset-tracking/*'))  
 <h3>BONEMA ASSET TRACKING</h3>
-<ul>
-  
-    {{-- <li><a class="{{ Route::is('ict-system') ? 'active' : '' }}" href=" {{route('ict-system')}} ">System &amp; Platforms</a></li>
-    <li><a class="{{ Route::is('ict-comms') ? 'active' : '' }}" href=" {{route('ict-comms')}} ">Comms &amp; Networks</a></li>
-    <li><a class="{{ Route::is('ict-application') ? 'active' : '' }}" href=" {{route('ict-application')}} ">Application Deployment</a></li>
-    <li><a class="{{ Route::is('ict-service') ? 'active' : '' }}" href=" {{route('ict-service')}} ">Professional Service</a></li>
-    <li><a class="{{ Route::is('ict-security') ? 'active' : '' }}" href=" {{route('ict-security')}} ">ICT Security</a></li>
-    <li><a class="{{ Route::is('ict-cloud') ? 'active' : '' }}" href=" {{route('ict-cloud')}} ">Cloud Services</a></li>
-    <li><a class="{{ Route::is('ict-sage') ? 'active' : '' }}" href=" {{route('ict-sage')}} ">Sage Solutions</a></li>
-    <li><a class="{{ Route::is('ict-outsourcing') ? 'active' : '' }}" href=" {{route('ict-outsourcing')}} ">IT Outsourcing</a></li>
-</ul> --}}
 <div class="buttons">
-  <a class="btn btn-quote" href="#">Bonema Asset Login</a>
-  <a class="btn btn-demo" href="#">Get A Free Demo</a>
+  <a class="btn btn-quote" target="_blank" href="http://34.73.4.152">Bonema Asset Login</a>
+  <a class="btn btn-demo" href="{{route('FreeDemo')}}">Get A Free Demo</a>
 </div>
 @endif

@@ -13,7 +13,7 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <title>{{config ('app.name')}} | {{$title}}</title>
 </head>
-@if (\Request::is('/') or \Request::is('gallery') or \Request::is('support') or \Request::is('contact-us') or \Request::is('events')) 
+@if (\Request::is('/') or \Request::is('gallery') or \Request::is('support') or \Request::is('contact-us') or \Request::is('events') or \Request::is('free-demo')) 
 
 <body class="@yield('page-name')">
   <x-navigation />

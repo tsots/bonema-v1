@@ -59,12 +59,9 @@
         </div>
       </div>
       <div class="social-media">
-        <ion-icon name="logo-facebook"></ion-icon>
-        {{-- <ion-icon name="logo-facebook"></ion-icon>
-        {{-- <i class="icon logo-facebook"></i>
-        <ion-icon name="logo-facebook"></ion-icon> --}}
-        <i class="icon ion-social-facebook"></i>
-        <img class="facebook" src="{{asset('images/icons/logo-facebook.svg')}}" alt="">
+        <a href="https://www.facebook.com/BonemaTechnologiesSA/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://twitter.com/bonematech" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://za.linkedin.com/in/bonema-technologies-917285116" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
       
       </div>
       <div class="copyright">

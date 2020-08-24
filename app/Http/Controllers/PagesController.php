@@ -203,4 +203,12 @@ public function AssetTrackingIndex(){
     $title = "Bonema Asset Tracking";
     return view('pages.bonema-asset-tracking.asset-tracking')->with('title', $title);
 }
+
+/////////////////////// BONEMA ASSET TRACKING PAGES //////////////////////////////////////
+
+public function FreeDemo(){
+    $title = "Free Demo";
+    return view('pages.free-demo')->with('title', $title);
+}
+
 }

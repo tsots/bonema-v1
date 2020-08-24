@@ -60,6 +60,12 @@
             justify-self: flex-end;
             width: 80%;
         }
+
+        p {
+            font-size: 1.8rem;
+            text-align: center;
+            color: #7f7f7f;
+        }
     }
     .contact {
         grid-area: details;

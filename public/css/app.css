@@ -1034,6 +1034,11 @@ main.leadership-team .content .leader .details p {
     width: 80%;
   }
 }
+.contact-page .inner .form p {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #7f7f7f;
+}
 .contact-page .inner .contact {
   grid-area: details;
   width: 90%;
@@ -1162,6 +1167,78 @@ main.leadership-team .content .leader .details p {
   font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+.demo-form.without-sidedar {
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+  min-height: calc(100vh - 8rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.4rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+.demo-form.without-sidedar form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 8rem 10rem 8rem;
+  background-color: #33358f;
+}
+.demo-form.without-sidedar form p {
+  font-size: 1.8rem;
+  line-height: calc(1.4rem * 1.618);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #f9f9f9;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-family: "open-sans", sans-serif;
+}
+.demo-form.without-sidedar form .input-group {
+  width: 100%;
+  position: relative;
+  margin-top: 35px;
+}
+.demo-form.without-sidedar form .input-group input {
+  width: 100%;
+  height: 35px;
+  padding: 0.05rem 1rem;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid silver;
+  transition: all 650ms;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.demo-form.without-sidedar form .input-group input:focus {
+  border: 1px solid #29abe2;
+  background-color: #f9f9f9;
+  box-shadow: inset 0px 0px 8px rgba(127, 127, 127, 0.26), 0px 0px 8px rgba(127, 127, 127, 0.26);
+}
+.demo-form.without-sidedar form .input-group label {
+  position: absolute;
+  top: -20px;
+  left: 1rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+}
+.demo-form.without-sidedar form button {
+  margin-top: 2rem;
+  background-color: #29abe2;
+  color: #f9f9f9;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 7px;
 }
 
 /*!

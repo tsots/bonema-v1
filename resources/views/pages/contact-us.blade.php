@@ -28,6 +28,7 @@
                 </div>
               </section>
               <section class="form">
+                <p>Fill in the form below and we will get back to you as soon as possible</p>
                 <form action="#">
                   <div class="input-field">
                     <input type="text" name="name" id="name"/>
